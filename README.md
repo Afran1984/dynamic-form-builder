@@ -1,40 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Dynamic No-Code Form Builder
 
-## Getting Started
+A **dynamic form builder** built with **Next.js** and **React**, allowing users to visually create, reorder, edit, and preview forms based on a JSON schema.  
 
-First, run the development server:
+---
 
+## 🚀 Features
+
+- **Render Form From JSON**  
+  Supports input types: `text`, `email`, `date`, `time`, `file`, `select`, `checkbox`, `radio`, and `acceptance`.
+  
+- **Field Palette (Left Sidebar)**  
+  Drag and drop new fields into the form canvas.
+
+- **Builder Canvas (Middle)**  
+  - Render fields dynamically.
+  - Reorder fields (optional with drag-and-drop).
+  - Hover actions: **Settings**, **Delete**, **Duplicate**.
+
+- **Settings Sidebar (Right Sidebar)**  
+  Edit selected field's properties:
+  - Label, Name, Placeholder
+  - Required toggle
+  - Options (for select, radio, checkbox)
+
+- **Preview Mode**  
+  View the form in read-only mode with validation.
+
+- **Bonus (Optional)**  
+  - Persist form data to **LocalStorage**.
+  - Display submitted form data in table format.
+  - Show success message after submission.
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js**  
+- **React**  
+- **Tailwind CSS** for styling  
+- **React DnD** (optional) for drag-and-drop functionality  
+- **uuid** for generating unique IDs  
+
+---
+
+## 📁 Project Structure
+
+dynamic-form-builder/
+├── components/
+│ ├── BuilderCanvas.tsx
+│ ├── FieldPalette.tsx
+│ ├── FieldRenderer.tsx
+│ ├── SettingsSidebar.tsx
+│ └── Topbar.tsx
+├── pages/
+│ ├── index.tsx
+│ └── _app.tsx
+├── utils/
+│ ├── schema.ts
+│ └── storage.ts
+├── public/
+├── styles/
+├── package.json
+└── tailwind.config.js
+
+---
+
+## 📧 Contact / Author
+Author: Md. Abdur Razzak Jim
+
+Email: afranrazzak1984@gmail.com
+
+LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/abdur-razzak-jim/)
+
+## ⚡ Installation & Setup
+
+1. **Clone the repository**
 ```bash
+git clone https://github.com/Afran1984/dynamic-form-builder.git
+cd dynamic-form
+npm install
+# or
+yarn
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
