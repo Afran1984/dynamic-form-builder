@@ -70,7 +70,7 @@ Author: Md. Abdur Razzak Jim
 
 Email: afranrazzak1984@gmail.com
 
-LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/abdur-razzak-jim/)
+LinkedIn: linkedin.com/in/abdur-razzak-jim
 
 ## ⚡ Installation & Setup
 
